@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap");
+
+body {
+  background-color: #000;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* CSS NAV */
+
+nav {
+  background-color: #1a1a1a;
+  /* Fond sombre */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff0000;
+  /* Rouge Sith */
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+/* CSS NAV */
+
+/* CSS TITRE */
+
+
+h1.title1 {
+  font-size: 3em;
+  color: #ff0000;
+  /* Rouge Sith */
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+img.photoEinhar {
+  border: 5px solid #ff0000;
+  /* Bordure rouge */
+  border-radius: 10px;
+  max-width: 20%;
+  height: auto;
+}
+
+p {
+  font-size: 1.2em;
+  color: #ff0000;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS DEFINITION */
+.divDefinition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pair {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: #1a1a1a;
+  /* Fond sombre */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #ff0000;
+  /* Rouge Sith */
+  margin-bottom: 10px;
+}
+
+.defSorcier {
+  margin: 0;
+  text-align: left;
+}
+
+/* CSS DEFINITION */
+
+/* CSS SPHERES */
+.spheres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sphere {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: #1a1a1a;
+  /* Fond sombre */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.sphere h3 {
+  color: #ff0000;
+  /* Rouge Sith */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sphere p {
+  margin: 0;
+  text-align: left;
+}
+
+/* CSS SPHERES */
+
+.rituels {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.colonne {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rituel {
+  background-color: #1a1a1a;
+  border: 2px solid #8B0000;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f8f8f8;
+  min-height: 200px;
+}
+
+.rituels h3 {
+  color: #8B0000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.rituels p {
+  color: #dcdcdc;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.sorts-sith {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.colonne {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sort {
+  background-color: #1a1a1a;
+  border: 2px solid #8B0000;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f8f8f8;
+  min-height: 250px;
+
+}
+
+.sorts-sith h3 {
+  color: #8B0000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sorts-sith p {
+  color: #dcdcdc;
+  margin-bottom: 20px;
+  flex: 1;
+}
