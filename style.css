@@ -12,9 +12,18 @@ body {
 
 /* CSS NAV */
 nav {
+  position: fixed;
+  /* Fixe le nav en haut de la page */
+  top: 0;
+  /* Aligne le nav en haut de la page */
+  left: 0;
+  width: 100%;
+  /* Prend toute la largeur */
   background-color: #111;
   padding: 20px 0;
   border-bottom: 3px solid #ff4500;
+  z-index: 1000;
+  /* Assure que le nav reste au-dessus du reste du contenu */
 }
 
 nav ul {
