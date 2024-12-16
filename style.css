@@ -8,7 +8,6 @@ body {
 }
 
 /* CSS NAV */
-
 nav {
   background-color: #1a1a1a;
   /* Fond sombre */
@@ -37,7 +36,7 @@ nav ul li a {
 
 /* CSS NAV */
 
-/* CSS devise*/
+/* CSS devise */
 .devise-sorciers {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
@@ -60,10 +59,9 @@ nav ul li a {
   font-size: 1.2em;
 }
 
-/* CSS devise*/
+/* CSS devise */
 
 /* CSS Caracteristiques */
-
 .caracteristiques-sorcier {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -96,6 +94,7 @@ nav ul li a {
 
 /* CSS Caracteristiques */
 
+/* CSS Roles Sorciers */
 .roles-sorcier {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -106,8 +105,6 @@ nav ul li a {
   margin: 20px;
   line-height: 1.6;
 }
-
-/* Roles Sorciers */
 
 .roles-sorcier h2 {
   color: #8B0000;
@@ -135,11 +132,9 @@ nav ul li a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Roles Sorciers */
+/* CSS Roles Sorciers */
 
 /* CSS TITRE */
-
-
 h1.title1 {
   font-size: 3em;
   color: #ff0000;
@@ -168,6 +163,8 @@ p {
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* CSS TITRE */
 
 /* CSS DEFINITION */
 .divDefinition {
@@ -203,7 +200,6 @@ h3 {
 /* CSS DEFINITION */
 
 /* CSS TENUE */
-
 .tenues-sorciers {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -328,7 +324,36 @@ h3 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #f8f8f8;
   min-height: 250px;
+}
 
+/* CSS Sorts Sith */
+.sorts-sith {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.colonne {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sort {
+  background-color: #1a1a1a;
+  border: 2px solid #8B0000;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f8f8f8;
+  min-height: 250px;
 }
 
 .sorts-sith h3 {
@@ -343,8 +368,9 @@ h3 {
   flex: 1;
 }
 
-/* magie stih */
+/* CSS Sorts Sith */
 
+/* CSS Aspects Sith */
 .aspects-sith {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -355,7 +381,6 @@ h3 {
   margin: 20px;
   line-height: 1.6;
 }
-
 
 .aspects-sith ul {
   list-style-type: none;
@@ -371,8 +396,9 @@ h3 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* magie stih */
+/* CSS Aspects Sith */
 
+/* CSS Sous-catégorie Magie Sith */
 .subcategorie-magie-sith {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -393,10 +419,9 @@ h3 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* magie stih */
+/* CSS Sous-catégorie Magie Sith */
 
-/* type magie stih */
-
+/* CSS Types de Magie Sith */
 .types-magie-sith {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -429,10 +454,9 @@ h3 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* type magie stih */
+/* CSS Types de Magie Sith */
 
-/* Jedi noir */
-
+/* CSS Jedi Noirs */
 .jedi-noirs {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -468,8 +492,9 @@ h3 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Jedi Noirs */
-/*Figures sith */
+/* CSS Jedi Noirs */
+
+/* CSS Figures Sith */
 .figures-sith {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -505,9 +530,9 @@ h3 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/*Figures sith */
+/* CSS Figures Sith */
 
-/* Créatures Sith */
+/* CSS Créatures Sith */
 .creatures-sith {
   font-family: 'Times New Roman', Times, serif;
   color: #f8f8f8;
@@ -538,4 +563,4 @@ h3 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Créatures Sith */
+/* CSS Créatures Sith */
