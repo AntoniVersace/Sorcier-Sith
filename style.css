@@ -392,3 +392,150 @@ h3 {
   border-left: 5px solid #8B0000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+/* magie stih */
+
+/* type magie stih */
+
+.types-magie-sith {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.types-magie-sith h2 {
+  color: #8B0000;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.types-magie-sith ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.types-magie-sith li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* type magie stih */
+
+/* Jedi noir */
+
+.jedi-noirs {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.jedi-noir {
+  margin-bottom: 20px;
+}
+
+.jedi-noirs h3 {
+  color: #8B0000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.jedi-noirs ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.jedi-noirs li {
+  font-size: 1.2em;
+  margin: 5px 0;
+  background-color: #2a2a2a;
+  padding: 5px 10px;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Jedi Noirs */
+/*Figures sith */
+.figures-sith {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.figure {
+  margin-bottom: 20px;
+}
+
+.figures-sith h3 {
+  color: #8B0000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.figures-sith ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.figures-sith li {
+  font-size: 1.2em;
+  margin: 5px 0;
+  background-color: #2a2a2a;
+  padding: 5px 10px;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*Figures sith */
+
+/* Créatures Sith */
+.creatures-sith {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.creature {
+  margin-bottom: 20px;
+}
+
+.creatures-sith h3 {
+  color: #8B0000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.creatures-sith p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Créatures Sith */
