@@ -5,13 +5,16 @@ body {
   font-family: "Orbitron", sans-serif;
   color: #fff;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 /* CSS NAV */
 nav {
-  background-color: #1a1a1a;
-  /* Fond sombre */
-  padding: 10px 0;
+  background-color: #111;
+  padding: 20px 0;
+  border-bottom: 3px solid #ff4500;
 }
 
 nav ul {
@@ -23,59 +26,70 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #ff0000;
-  /* Rouge Sith */
-  font-size: 1.2em;
+  color: #ff4500;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff4500;
   transition: all 0.3s ease;
 }
 
-/* CSS NAV */
+nav ul li a:hover {
+  color: #f8f8f8;
+  text-shadow: 0 0 15px #ff4500, 0 0 25px #ff4500;
+}
 
-/* CSS devise */
+/* Section Devises Sorciers */
 .devise-sorciers {
   font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  color: #f8f8f8;
   background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
+  padding: 30px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.devise-sorciers:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
 }
 
 .devise-sorciers h2 {
-  color: #8B0000;
-  font-size: 2em;
+  color: #ff4500;
+  font-size: 2.8em;
   margin-bottom: 20px;
+  font-family: "Audiowide", sans-serif;
 }
 
 .devise-sorciers p {
-  margin: 10px 0;
-  font-size: 1.2em;
-}
-
-/* CSS devise */
-
-/* CSS Caracteristiques */
-.caracteristiques-sorcier {
-  font-family: 'Times New Roman', Times, serif;
+  margin: 20px 0;
+  font-size: 1.4em;
   color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
 }
 
-.caracteristiques-sorcier p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+/* Section Caractéristiques Sorciers */
+.caracteristiques-sorcier {
+  background-color: #2c2c2c;
+  padding: 30px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.caracteristiques-sorcier h2 {
+  color: #ff4500;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  font-family: "Audiowide", sans-serif;
 }
 
 .caracteristiques-sorcier ul {
@@ -84,302 +98,187 @@ nav ul li a {
 }
 
 .caracteristiques-sorcier li {
-  font-size: 1.2em;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #2a2a2a;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.3em;
+  margin: 20px 0;
+  padding: 12px;
+  background-color: #333;
+  border-left: 8px solid #ff4500;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* CSS Caracteristiques */
+.caracteristiques-sorcier li:hover {
+  background-color: #444;
+  transform: scale(1.02);
+}
 
-/* CSS Roles Sorciers */
+.caracteristiques-sorcier li span {
+  font-weight: bold;
+}
+
+/* Section Rôles Sorciers */
 .roles-sorcier {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
+  background-color: #3a3a3a;
+  padding: 40px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .roles-sorcier h2 {
-  color: #8B0000;
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
+  color: #ff4500;
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  font-family: "Audiowide", sans-serif;
 }
 
 .roles-sorcier .role {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .roles-sorcier h3 {
-  color: #8B0000;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  color: #ff6347;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px #000, 0 0 25px #ff4500;
 }
 
 .roles-sorcier p {
-  font-size: 1.2em;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #2a2a2a;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.4em;
+  padding: 15px;
+  background-color: #4a4a4a;
+  border-left: 8px solid #ff4500;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* CSS Roles Sorciers */
-
-/* CSS TITRE */
-h1.title1 {
-  font-size: 3em;
-  color: #ff0000;
-  /* Rouge Sith */
-  margin-top: 50px;
+.roles-sorcier p:hover {
+  background-color: #555;
+  transform: scale(1.02);
 }
 
-h2 {
-  font-size: 2em;
-  color: #ff0000;
-  margin-bottom: 20px;
-}
-
-img.photoEinhar {
-  border: 5px solid #ff0000;
-  /* Bordure rouge */
-  border-radius: 10px;
-  max-width: 20%;
-  height: auto;
-}
-
-p {
-  font-size: 1.2em;
-  color: #ff0000;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* CSS TITRE */
-
-/* CSS DEFINITION */
+/* Section Définitions */
 .divDefinition {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .pair {
   display: flex;
   flex-direction: column;
   width: 45%;
-  background-color: #1a1a1a;
-  /* Fond sombre */
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h3 {
-  color: #ff0000;
-  /* Rouge Sith */
-  margin-bottom: 10px;
+.pair:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.pair h3 {
+  font-size: 2.2em;
+  color: #ff6347;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px #000, 0 0 20px #ff4500;
 }
 
 .defSorcier {
-  margin: 0;
-  text-align: left;
-}
-
-/* CSS DEFINITION */
-
-/* CSS TENUE */
-.tenues-sorciers {
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4em;
   color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
 }
 
-.tenues-sorciers p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  background-color: #2a2a2a;
-  padding: 10px;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* CSS TENUE */
-
-/* CSS SPHERES */
+/* Section Sphères */
 .spheres {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .sphere {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  background-color: #1a1a1a;
-  /* Fond sombre */
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  flex: 1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .sphere h3 {
-  color: #ff0000;
-  /* Rouge Sith */
-  margin-bottom: 10px;
+  font-size: 2.2em;
+  color: #ff6347;
+  margin-bottom: 20px;
   text-align: center;
+  text-shadow: 1px 1px 4px #000, 0 0 20px #ff4500;
 }
 
 .sphere p {
-  margin: 0;
-  text-align: left;
-}
-
-/* CSS SPHERES */
-
-.rituels {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.colonne {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.rituel {
-  background-color: #1a1a1a;
-  border: 2px solid #8B0000;
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.4em;
   color: #f8f8f8;
-  min-height: 200px;
-}
-
-.rituels h3 {
-  color: #8B0000;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.rituels p {
-  color: #dcdcdc;
   margin-bottom: 20px;
-  flex: 1;
 }
 
+/* Section Sorts Sith */
 .sorts-sith {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-}
-
-.colonne {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 25px;
+  margin-top: 50px;
 }
 
 .sort {
-  background-color: #1a1a1a;
-  border: 2px solid #8B0000;
-  padding: 20px;
+  background-color: #2c2c2c;
+  border: 3px solid #ff4500;
+  padding: 30px;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #f8f8f8;
-  min-height: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* CSS Sorts Sith */
-.sorts-sith {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+.sort:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
 }
 
-.colonne {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.sort {
-  background-color: #1a1a1a;
-  border: 2px solid #8B0000;
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #f8f8f8;
-  min-height: 250px;
-}
-
-.sorts-sith h3 {
-  color: #8B0000;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.sorts-sith p {
-  color: #dcdcdc;
+.sort h3 {
+  font-size: 2em;
+  color: #ff6347;
   margin-bottom: 20px;
-  flex: 1;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000, 0 0 20px #ff4500;
 }
 
-/* CSS Sorts Sith */
+.sort p {
+  font-size: 1.4em;
+  color: #f8f8f8;
+}
 
-/* CSS Aspects Sith */
+/* Section Aspects Sith */
 .aspects-sith {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
+  background-color: #2c2c2c;
+  padding: 30px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.aspects-sith h2 {
+  font-size: 2.8em;
+  color: #ff6347;
+  margin-bottom: 30px;
 }
 
 .aspects-sith ul {
@@ -388,94 +287,36 @@ h3 {
 }
 
 .aspects-sith li {
-  font-size: 1.2em;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #2a2a2a;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.4em;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #333;
+  border-left: 8px solid #ff4500;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* CSS Aspects Sith */
-
-/* CSS Sous-catégorie Magie Sith */
-.subcategorie-magie-sith {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
+.aspects-sith li:hover {
+  background-color: #444;
+  transform: scale(1.02);
 }
 
-.subcategorie-magie-sith p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  background-color: #2a2a2a;
-  padding: 10px;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* CSS Sous-catégorie Magie Sith */
-
-/* CSS Types de Magie Sith */
-.types-magie-sith {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
-}
-
-.types-magie-sith h2 {
-  color: #8B0000;
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.types-magie-sith ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.types-magie-sith li {
-  font-size: 1.2em;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #2a2a2a;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* CSS Types de Magie Sith */
-
-/* CSS Jedi Noirs */
+/* Section Jedi Noirs */
 .jedi-noirs {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
-}
-
-.jedi-noir {
-  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  padding: 30px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .jedi-noirs h3 {
-  color: #8B0000;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 2.2em;
+  color: #ff6347;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .jedi-noirs ul {
@@ -484,36 +325,30 @@ h3 {
 }
 
 .jedi-noirs li {
-  font-size: 1.2em;
-  margin: 5px 0;
-  background-color: #2a2a2a;
-  padding: 5px 10px;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.4em;
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #333;
+  border-left: 8px solid #ff4500;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* CSS Jedi Noirs */
-
-/* CSS Figures Sith */
+/* Section Figures Sith */
 .figures-sith {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
-}
-
-.figure {
-  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  padding: 30px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .figures-sith h3 {
-  color: #8B0000;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 2.2em;
+  color: #ff6347;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .figures-sith ul {
@@ -522,45 +357,34 @@ h3 {
 }
 
 .figures-sith li {
-  font-size: 1.2em;
-  margin: 5px 0;
-  background-color: #2a2a2a;
-  padding: 5px 10px;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.4em;
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #333;
+  border-left: 8px solid #ff4500;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* CSS Figures Sith */
-
-/* CSS Créatures Sith */
+/* Section Créatures Sith */
 .creatures-sith {
-  font-family: 'Times New Roman', Times, serif;
-  color: #f8f8f8;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #8B0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  line-height: 1.6;
-}
-
-.creature {
-  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  padding: 30px;
+  border: 3px solid #ff4500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .creatures-sith h3 {
-  color: #8B0000;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 2.2em;
+  color: #ff6347;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .creatures-sith p {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  color: #f8f8f8;
   margin-bottom: 20px;
-  background-color: #2a2a2a;
-  padding: 10px;
-  border-left: 5px solid #8B0000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-
-/* CSS Créatures Sith */
