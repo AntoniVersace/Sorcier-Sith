@@ -37,6 +37,106 @@ nav ul li a {
 
 /* CSS NAV */
 
+/* CSS devise*/
+.devise-sorciers {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.devise-sorciers h2 {
+  color: #8B0000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.devise-sorciers p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+/* CSS devise*/
+
+/* CSS Caracteristiques */
+
+.caracteristiques-sorcier {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.caracteristiques-sorcier p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.caracteristiques-sorcier ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.caracteristiques-sorcier li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS Caracteristiques */
+
+.roles-sorcier {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+/* Roles Sorciers */
+
+.roles-sorcier h2 {
+  color: #8B0000;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.roles-sorcier .role {
+  margin-bottom: 20px;
+}
+
+.roles-sorcier h3 {
+  color: #8B0000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.roles-sorcier p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Roles Sorciers */
+
 /* CSS TITRE */
 
 
@@ -101,6 +201,30 @@ h3 {
 }
 
 /* CSS DEFINITION */
+
+/* CSS TENUE */
+
+.tenues-sorciers {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.tenues-sorciers p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS TENUE */
 
 /* CSS SPHERES */
 .spheres {
@@ -217,4 +341,54 @@ h3 {
   color: #dcdcdc;
   margin-bottom: 20px;
   flex: 1;
+}
+
+/* magie stih */
+
+.aspects-sith {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+
+.aspects-sith ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.aspects-sith li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* magie stih */
+
+.subcategorie-magie-sith {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.subcategorie-magie-sith p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
