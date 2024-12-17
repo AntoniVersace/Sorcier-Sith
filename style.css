@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Arial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+/* GLOBAL */
 body {
   background-color: #000;
   font-family: "Roboto", sans-serif;
@@ -8,389 +9,338 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  padding-top: 50px;
+  padding-top: calc(5px + 2em);
+  user-select: none;
+  /* Désactive la sélection du texte */
+  /* Ajuste en fonction des paddings de la navbar */
 }
 
-/* CSS NAV */
-nav {
+/* Contenu principal */
+.main-content {
+  margin-top: 60px;
+  /* Ajoute de l'espace pour éviter la superposition de la navbar */
+}
+
+/* TITRES */
+h2,
+h3 {
+  color: #ff4500;
+  text-shadow: 0 0 10px #ff4500;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+/* Réinitialiser tous les styles globaux pour la navbar */
+/* Navbar visible normalement */
+.navbar {
+  all: unset;
   position: fixed;
-  /* Fixe le nav en haut de la page */
   top: 0;
-  /* Aligne le nav en haut de la page */
   left: 0;
   width: 100%;
-  /* Prend toute la largeur */
-  background-color: #111;
-  padding: 20px 0;
-  border-bottom: 3px solid #ff4500;
+  padding: 10px 0;
   z-index: 1000;
-  /* Assure que le nav reste au-dessus du reste du contenu */
+  background-color: #222;
+  border-bottom: 3px solid #ff4500;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Lorsque la page est défilée, cette classe est ajoutée */
+.navbar.scrolled {
+  background-color: rgba(34, 34, 34, 0.5);
+  /* Fond transparent */
+  opacity: 0.8;
+  /* Légèrement transparent */
+}
+
+.navbar .menuNav {
+  all: unset;
+  /* Réinitialise tous les styles hérités pour le menu de la navbar */
   display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar .liNav {
+  all: unset;
+  /* Réinitialise tous les styles hérités pour chaque item de menu */
+  margin: 0 15px;
+}
+
+.navbar .liNav a {
+  all: unset;
+  /* Réinitialise tous les styles hérités pour chaque lien */
+  text-decoration: none;
+  color: #ff4500;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  /* Retirer les bordures */
+  background-color: transparent;
+  /* Retirer le fond */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* Modifie le curseur quand il est sur les éléments du menu */
+}
+
+.navbar .liNav a:hover {
+  color: #fff;
+  text-shadow: 0 0 15px #ff4500;
+}
+
+/* SÉPARATIONS VISIBLES ENTRE SECTIONS */
+section {
+  border-top: 3px solid #ff4500;
+  padding-top: 40px;
+  /* Espace après séparation */
+  margin-top: 30px;
+  /* Décalage visuel */
+}
+
+section:first-of-type {
+  border-top: none;
+  /* Pas de séparation en haut de la première section */
+}
+
+/* CONTENEURS GÉNÉRAUX */
+div[class*="-sorcier"],
+div[class*="-sith"],
+div[class*="-spheres"],
+div[class*="pair"] {
+  background-color: #2c2c2c;
+  border: 2px solid #ff4500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  width: 85%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div[class*="-sorcier"]:hover,
+div[class*="-sith"]:hover,
+div[class*="-spheres"]:hover,
+div[class*="pair"]:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.6);
+}
+
+/* LISTES ET TEXTES */
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  color: #f8f8f8;
+}
+
+li,
+.defSorcier,
+.tenues-sorciers {
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #333;
+  border-left: 5px solid #ff4500;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover,
+.defSorcier:hover,
+.tenues-sorciers:hover {
+  background-color: #444;
+  transform: scale(1.02);
+}
+
+/* FLEXBOX POUR SECTIONS */
+.spheres,
+.rituels,
+.sorts-sith {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
 }
 
-nav ul li {
-  margin: 0 25px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #ff4500;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-shadow: 0 0 5px #ff4500;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #f8f8f8;
-  text-shadow: 0 0 15px #ff4500, 0 0 25px #ff4500;
-}
-
-/* Section Devises Sorciers */
-.devise-sorciers {
-  font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
-  padding: 30px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
-  border-radius: 10px;
+/* Box des rituels et magie Sith - Plus grandes */
+.rituel,
+.sort {
+  background-color: #222;
+  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 300px;
+  max-width: 700px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.devise-sorciers:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
-}
-
-.devise-sorciers h2 {
-  color: #ff4500;
-  font-size: 2.8em;
-  margin-bottom: 20px;
-}
-
-.devise-sorciers p {
-  margin: 20px 0;
-  font-size: 1.4em;
-  color: #f8f8f8;
-}
-
-/* Section Caractéristiques Sorciers */
-.caracteristiques-sorcier {
-  background-color: #2c2c2c;
-  padding: 30px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
-  border-radius: 10px;
-}
-
-.caracteristiques-sorcier h2 {
-  color: #ff4500;
-  font-size: 2.5em;
-  margin-bottom: 25px;
-}
-
-.caracteristiques-sorcier ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.caracteristiques-sorcier li {
-  font-size: 1.3em;
-  margin: 20px 0;
-  padding: 12px;
-  background-color: #333;
-  border-left: 8px solid #ff4500;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.caracteristiques-sorcier li:hover {
-  background-color: #444;
-  transform: scale(1.02);
-}
-
-.caracteristiques-sorcier li span {
-  font-weight: bold;
-}
-
-/* Section Rôles Sorciers */
-.roles-sorcier {
-  background-color: #3a3a3a;
-  padding: 40px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
-  border-radius: 10px;
-}
-
-.roles-sorcier h2 {
-  color: #ff4500;
-  font-size: 2.8em;
-  margin-bottom: 30px;
-}
-
-.roles-sorcier .role {
-  margin-bottom: 40px;
-}
-
-.roles-sorcier h3 {
-  color: #ff6347;
-  font-size: 2em;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 5px #000, 0 0 25px #ff4500;
-}
-
-.roles-sorcier p {
-  font-size: 1.4em;
-  padding: 15px;
-  background-color: #4a4a4a;
-  border-left: 8px solid #ff4500;
-  margin-bottom: 25px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
-}
-
-.roles-sorcier p:hover {
-  background-color: #555;
-  transform: scale(1.02);
-}
-
-/* Section Définitions */
-.divDefinition {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.pair {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  background-color: #2c2c2c;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.pair:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
-}
-
-.pair h3 {
-  font-size: 2.2em;
-  color: #ff6347;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 4px #000, 0 0 20px #ff4500;
-}
-
-.defSorcier {
-  font-size: 1.4em;
-  color: #f8f8f8;
-}
-
-/* Section Sphères */
-.spheres {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 50px;
+  /* Ajout pour espacer le contenu */
+  height: 350px;
+  /* Hauteur augmentée pour rendre les box plus grandes */
 }
 
-.sphere {
-  background-color: #2c2c2c;
-  padding: 30px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  flex: 1;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-}
+/* Alignement des titres en haut et texte centré */
+.rituel h3 {
+  margin-bottom: 10px;
+  /* Réduit l'espace sous le titre */
+  font-size: 1.5em;
+  /* Taille du titre ajustée */
 
-.sphere h3 {
-  font-size: 2.2em;
-  color: #ff6347;
-  margin-bottom: 20px;
+  /* Assure que le titre est en haut */
   text-align: center;
-  text-shadow: 1px 1px 4px #000, 0 0 20px #ff4500;
 }
 
-.sphere p {
-  font-size: 1.4em;
-  color: #f8f8f8;
-  margin-bottom: 20px;
-}
-
-/* Section Sorts Sith */
-.sorts-sith {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  margin-top: 50px;
-}
-
-.sort {
-  background-color: #2c2c2c;
-  border: 3px solid #ff4500;
-  padding: 30px;
-  flex: 1;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin-bottom: 40px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sort:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
-}
-
-.sort h3 {
-  font-size: 2em;
-  color: #ff6347;
-  margin-bottom: 20px;
-  text-align: center;
-  text-shadow: 1px 1px 5px #000, 0 0 20px #ff4500;
-}
-
+/* Centrer le texte dans la box */
+.rituel p,
 .sort p {
-  font-size: 1.4em;
-  color: #f8f8f8;
-}
-
-/* Section Aspects Sith */
-.aspects-sith {
-  background-color: #2c2c2c;
-  padding: 30px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
-  border-radius: 10px;
-}
-
-.aspects-sith h2 {
-  font-size: 2.8em;
-  color: #ff6347;
-  margin-bottom: 30px;
-}
-
-.aspects-sith ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.aspects-sith li {
-  font-size: 1.4em;
-  margin: 20px 0;
-  padding: 15px;
-  background-color: #333;
-  border-left: 8px solid #ff4500;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.aspects-sith li:hover {
-  background-color: #444;
-  transform: scale(1.02);
-}
-
-/* Section Jedi Noirs */
-.jedi-noirs {
-  background-color: #2c2c2c;
-  padding: 30px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
-  border-radius: 10px;
-}
-
-.jedi-noirs h3 {
-  font-size: 2.2em;
-  color: #ff6347;
-  margin-bottom: 25px;
+  font-size: 1em;
+  color: #ccc;
+  line-height: 1.4;
+  margin-top: 0;
+  /* Réduit l'espace au-dessus des paragraphes */
+  margin-bottom: 10px;
+  /* Réduit l'espace sous les paragraphes */
+  flex-grow: 1;
+  /* Permet au texte de s'étendre et de se centrer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centrer le contenu verticalement */
   text-align: center;
+  /* Centrer le texte horizontalement */
 }
 
-.jedi-noirs ul {
-  list-style-type: none;
-  padding-left: 0;
+/* Style des sections Description et Utilisation */
+.rituel .description,
+.sort .description,
+.rituel .utilisation,
+.sort .utilisation {
+  margin-bottom: 15px;
+  /* Marge entre la description et l'utilisation */
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
-.jedi-noirs li {
-  font-size: 1.4em;
-  margin: 15px 0;
-  padding: 12px;
-  background-color: #333;
-  border-left: 8px solid #ff4500;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+/* Style des paragraphes dans Description et Utilisation */
+.rituel .description p,
+.sort .description p,
+.rituel .utilisation p,
+.sort .utilisation p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #bbb;
+  text-align: left;
+  /* Aligner le texte à gauche pour une meilleure lisibilité */
 }
 
-/* Section Figures Sith */
-.figures-sith {
-  background-color: #2c2c2c;
-  padding: 30px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
+/* SÉPARATEURS ENTRE FLEXBOX */
+.spheres,
+.rituels,
+.sorts-sith {
+  border: 1px solid #444;
+  padding: 10px;
+  margin-top: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  background-color: #1a1a1a;
 }
 
-.figures-sith h3 {
-  font-size: 2.2em;
-  color: #ff6347;
-  margin-bottom: 25px;
-  text-align: center;
+/* Adaptation pour iPhone */
+@media only screen and (max-width: 768px) {
+  .navbar .liNav a {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  .main-content {
+    margin-top: 80px;
+  }
+
+  div[class*="-sorcier"],
+  div[class*="-sith"],
+  div[class*="-spheres"],
+  div[class*="pair"] {
+    width: 90%;
+  }
+
+  .rituel,
+  .sort {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .spheres,
+  .rituels,
+  .sorts-sith {
+    flex-direction: column;
+  }
+
+  .rituel p,
+  .sort p {
+    font-size: 0.9em;
+  }
 }
 
-.figures-sith ul {
-  list-style-type: none;
-  padding-left: 0;
-}
+@media only screen and (max-width: 480px) {
+  .navbar .liNav a {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
 
-.figures-sith li {
-  font-size: 1.4em;
-  margin: 15px 0;
-  padding: 12px;
-  background-color: #333;
-  border-left: 8px solid #ff4500;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
-}
+  h2 {
+    font-size: 1.6em;
+  }
 
-/* Section Créatures Sith */
-.creatures-sith {
-  background-color: #2c2c2c;
-  padding: 30px;
-  border: 3px solid #ff4500;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 50px auto;
-  width: 80%;
-  border-radius: 10px;
-}
+  h3 {
+    font-size: 1.3em;
+  }
 
-.creatures-sith h3 {
-  font-size: 2.2em;
-  color: #ff6347;
-  margin-bottom: 25px;
-  text-align: center;
-}
+  div[class*="-sorcier"],
+  div[class*="-sith"],
+  div[class*="-spheres"],
+  div[class*="pair"] {
+    width: 95%;
+  }
 
-.creatures-sith p {
-  font-size: 1.4em;
-  color: #f8f8f8;
-  margin-bottom: 20px;
+  .rituel,
+  .sort {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .spheres,
+  .rituels,
+  .sorts-sith {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .rituel p,
+  .sort p {
+    font-size: 0.9em;
+  }
 }
