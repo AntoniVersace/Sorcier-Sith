@@ -15,24 +15,26 @@ const navLinks = document.querySelectorAll(".navbar .liNav a");
 // Ajouter un événement de clic pour chaque lien
 navLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
-    // Empêche le comportement par défaut du lien (saut instantané)
-    e.preventDefault();
+    const href = link.getAttribute("href");
 
-    // Sélectionne la section cible à partir de l'attribut href
-    const targetId = link.getAttribute("href");
-    const targetSection = document.querySelector(targetId);
+    // Si le lien est interne (commence par #), alors on empêche le comportement par défaut
+    if (href.startsWith("#")) {
+      e.preventDefault();
 
-    // Calculer la position de la section cible
-    const targetPosition = targetSection.offsetTop;
+      const targetSection = document.querySelector(href);
 
-    // Fait défiler la page en douceur vers la section cible mais arrête à 100px au-dessus
-    window.scrollTo({
-      top: targetPosition - 100, // Ajuster la position de 100px plus haut
-      behavior: "smooth", // Défilement fluide
-    });
+      if (targetSection) {
+        const targetPosition = targetSection.offsetTop;
+
+        window.scrollTo({
+          top: targetPosition - 100,
+          behavior: "smooth",
+        });
+      }
+    }
+    // Sinon, c'est un lien vers une autre page — laisser le comportement normal
   });
 });
-
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
